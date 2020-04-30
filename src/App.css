@@ -1,0 +1,97 @@
+.main {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg")
+    /* repeat center center; */;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.container {
+  background-color: transparent;
+  /* background-color: aliceblue; */
+  color: white;
+}
+
+.fullh {
+  height: 100vh;
+}
+
+.limh {
+  height: 93vh;
+}
+
+.land {
+  height: 100vh;
+}
+
+.land-cont {
+  padding-top: auto;
+}
+
+html {
+  transition: ease;
+}
+
+.login {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: color-burn;
+}
+
+.posts {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.posts::-webkit-scrollbar {
+  display: none;
+}
+
+.search {
+  height: 81vh;
+}
+
+.users {
+  height: 100vh;
+}
+
+.chats {
+  height: 93vh;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.imager {
+  height: 60vh;
+}
+
+.elemChat {
+  padding-top: 10vh;
+}
+
+.msg {
+  background-color: aliceblue;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: large;
+  display: flex;
+}
+
+.phgt {
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+.phgt::-webkit-scrollbar {
+  display: none;
+}
+
+.pcrd {
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .pcrd {
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+export const TOKEN = "TOKEN";
+export const AUTH = "AUTH";
+export const LOGIN = "LOGIN";
+export const SIGNUP = "SIGNUP";
+export const PAGER = "PAGER";
+export const MESSAGE = "MESSAGE";
+export const ERROR = "ERROR";
+export const POSTS = "POSTS";
+export const SEARCH = "SEARCH";
+export const FRIENDS = "FRIENDS";
+export const USERDATA = "USERDATA";
+export const PROFILE = "PROFILE";
+export const CHAT = "CHAT";
