@@ -1,3 +1,3 @@
-const baseurl = "http://localhost:6969/";
+const baseurl = " https://api-pics-play.herokuapp.com/";
 
 export default baseurl;
