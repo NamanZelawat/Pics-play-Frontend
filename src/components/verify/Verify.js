@@ -9,12 +9,16 @@ class Verify extends Component {
     };
   }
   verify(otp) {
-    fetch("http://localhost:6969/" + `otp?otp=${otp}`, {
-      method: "get",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
+    fetch(
+      " https://cors-anywhere.herokuapp.com/https://api-pics-play.herokuapp.com/" +
+        `otp?otp=${otp}`,
+      {
+        method: "get",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    )
       .then(
         (response) => {
           response.json().then((data) => {
