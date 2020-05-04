@@ -53,15 +53,15 @@ class Hang extends Component {
     super(props);
     this.handleMessage = this.handleMessage.bind(this);
   }
-  // componentDidMount() {
-  //   this.interval = setInterval(
-  //     () => this.props.fetchChats(this.props.match.params.user),
-  //     1000
-  //   );
-  // }
-  // componentWillUnmount() {
-  //   clearInterval(this.interval);
-  // }
+  componentDidMount() {
+    this.interval = setInterval(
+      () => this.props.fetchChats(this.props.match.params.user),
+      60000
+    );
+  }
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
   componentDidMount() {
     this.props.fetchChats(this.props.match.params.user);
   }
