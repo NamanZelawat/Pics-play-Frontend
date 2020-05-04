@@ -57,6 +57,27 @@ class Posts extends Component {
                   </Card>
                 </div>
               ))}
+              <div>
+                <Card
+                  className="bg-transparent border border-white mt-4 mb-2"
+                  style={{ width: "100%" }}
+                >
+                  <CardBody>
+                    <CardText>XX...MADE..BY...XX</CardText>
+                  </CardBody>
+                  {/* <div className="imager"> */}
+                  <CardImg
+                    variant="bottom"
+                    src="https://github.com/NamanZelawat/Pics-play-Data/blob/master/eklavya/47c1ca60-aed9-4269-85b3-9b499c67d15a.png?raw=true"
+                    style={{ padding: "1.25rem" }}
+                    className="img-responsive"
+                  />
+                  {/* </div> */}
+                  <CardBody>
+                    <CardText>Caption.</CardText>
+                  </CardBody>
+                </Card>
+              </div>
             </div>
             <div className="d-none d-sm-block col-sm-4 limh posts">
               {this.props.friendsData.map((item, index) => (
@@ -90,7 +111,30 @@ class Posts extends Component {
       return (
         <div className="row">
           <div className="limh posts col-12 col-sm-8 ">
-            <h4 className="mt-5 w-100 text-center">no posts yet..</h4>
+            <h4 className="mt-5 w-100 text-center">
+              {" "}
+              <div>
+                <Card
+                  className="bg-transparent border border-white mt-4 mb-2"
+                  style={{ width: "100%" }}
+                >
+                  <CardBody>
+                    <CardText>XX...MADE..BY...XX</CardText>
+                  </CardBody>
+                  {/* <div className="imager"> */}
+                  <CardImg
+                    variant="bottom"
+                    src="https://github.com/NamanZelawat/Pics-play-Data/blob/master/eklavya/47c1ca60-aed9-4269-85b3-9b499c67d15a.png?raw=true"
+                    style={{ padding: "1.25rem" }}
+                    className="img-responsive"
+                  />
+                  {/* </div> */}
+                  <CardBody>
+                    <CardText>Caption.</CardText>
+                  </CardBody>
+                </Card>
+              </div>
+            </h4>
           </div>
           <div className="d-none d-sm-block col-sm-4 limh posts">
             {this.props.friendsData.map((item, index) => (
@@ -145,6 +189,27 @@ class Posts extends Component {
                 </Card>
               </div>
             ))}
+            <div>
+              <Card
+                className="bg-transparent border border-white mt-4 mb-2"
+                style={{ width: "100%" }}
+              >
+                <CardBody>
+                  <CardText>XX...MADE..BY...XX</CardText>
+                </CardBody>
+                {/* <div className="imager"> */}
+                <CardImg
+                  variant="bottom"
+                  src="https://github.com/NamanZelawat/Pics-play-Data/blob/master/eklavya/47c1ca60-aed9-4269-85b3-9b499c67d15a.png?raw=true"
+                  style={{ padding: "1.25rem" }}
+                  className="img-responsive"
+                />
+                {/* </div> */}
+                <CardBody>
+                  <CardText>Caption.</CardText>
+                </CardBody>
+              </Card>
+            </div>
           </div>
           <div className="limh posts col-12 col-sm-4 ">
             <h4 className="mt-5 w-100 text-center">no friends yet..</h4>
@@ -155,7 +220,27 @@ class Posts extends Component {
       return (
         <div className="row">
           <div className="limh posts col-12 col-sm-8 ">
-            <h4 className="mt-5 w-100 text-center">no posts yet..</h4>
+            <div>
+              <Card
+                className="bg-transparent border border-white mt-4 mb-2"
+                style={{ width: "100%" }}
+              >
+                <CardBody>
+                  <CardText>XX...MADE..BY...XX</CardText>
+                </CardBody>
+                {/* <div className="imager"> */}
+                <CardImg
+                  variant="bottom"
+                  src="https://github.com/NamanZelawat/Pics-play-Data/blob/master/eklavya/47c1ca60-aed9-4269-85b3-9b499c67d15a.png?raw=true"
+                  style={{ padding: "1.25rem" }}
+                  className="img-responsive"
+                />
+                {/* </div> */}
+                <CardBody>
+                  <CardText>Caption.</CardText>
+                </CardBody>
+              </Card>
+            </div>
           </div>
           <div className="limh posts col-12 col-sm-4 ">
             <h4 className="mt-5 w-100 text-center">no friends yet..</h4>

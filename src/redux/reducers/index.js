@@ -10,6 +10,7 @@ import friends from "./friends";
 import userData from "./userData";
 import profile from "./profile";
 import chat from "./chat";
+import pending from "./pending";
 
 export default combineReducers({
   token: token,
@@ -23,4 +24,5 @@ export default combineReducers({
   userData: userData,
   profile: profile,
   chat: chat,
+  pending: pending,
 });

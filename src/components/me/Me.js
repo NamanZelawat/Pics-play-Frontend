@@ -25,7 +25,6 @@ class Comp extends Component {
     };
     this.statusSet = this.statusSet.bind(this);
   }
-  componentDidMount() {}
   statusSet(val) {
     this.setState({
       status: val,
@@ -83,31 +82,29 @@ class Comp extends Component {
             <div className="row">
               <div className="pcrd mx-auto">
                 {this.props.postsView.map((item, index) => {
-                  if (item.username === this.props.username) {
-                    return (
-                      <div key={index}>
-                        <Card
-                          className="bg-transparent border border-white mt-4 mb-2"
-                          style={{ width: "100%" }}
-                        >
-                          <CardBody>
-                            <CardText>@{item.username}</CardText>
-                          </CardBody>
+                  return (
+                    <div key={index}>
+                      <Card
+                        className="bg-transparent border border-white mt-4 mb-2"
+                        style={{ width: "100%" }}
+                      >
+                        <CardBody>
+                          <CardText>@{item.username}</CardText>
+                        </CardBody>
 
-                          <CardImg
-                            variant="bottom"
-                            src={item.url}
-                            style={{ padding: "1.25rem" }}
-                            className="img-responsive"
-                          />
+                        <CardImg
+                          variant="bottom"
+                          src={item.url}
+                          style={{ padding: "1.25rem" }}
+                          className="img-responsive"
+                        />
 
-                          <CardBody>
-                            <CardText>Caption.</CardText>
-                          </CardBody>
-                        </Card>
-                      </div>
-                    );
-                  }
+                        <CardBody>
+                          <CardText>Caption.</CardText>
+                        </CardBody>
+                      </Card>
+                    </div>
+                  );
                 })}
               </div>
             </div>
@@ -178,7 +175,7 @@ class Comp extends Component {
                         className="text-white"
                       >
                         <div
-                          class="media mt-5 border border-white rounded p-3"
+                          class="media mt-3 border border-white rounded p-3"
                           key={index}
                         >
                           <img
@@ -259,9 +256,9 @@ class Comp extends Component {
                   </div>
                 ) : (
                   <div className="posts">
-                    {this.props.pending.map((item, index) => (
+                    {this.props.pendingData.map((item, index) => (
                       <Link
-                        to={"/chat/" + item.username}
+                        to={"/search/" + item.username}
                         className="text-white"
                       >
                         <div

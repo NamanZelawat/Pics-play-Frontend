@@ -11,3 +11,4 @@ export const FRIENDS = "FRIENDS";
 export const USERDATA = "USERDATA";
 export const PROFILE = "PROFILE";
 export const CHAT = "CHAT";
+export const PENDING = "PENDING";

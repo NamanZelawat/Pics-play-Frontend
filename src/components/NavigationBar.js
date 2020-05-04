@@ -45,6 +45,9 @@ class NavigationBar extends Component {
             <NavLink className="text-white" href="/chat">
               <i class="fa fa-comments-o" aria-hidden="true"></i>
             </NavLink>
+            <NavLink className="text-white" href="/pending">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+            </NavLink>
             <NavLink className="text-white" href="/me">
               <i class="fa fa-user" aria-hidden="true"></i>
             </NavLink>

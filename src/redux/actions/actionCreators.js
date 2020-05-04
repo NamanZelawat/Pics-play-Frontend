@@ -23,6 +23,10 @@ export const auth = (curr) => (dispatch) => {
 };
 
 export const login = (info) => (dispatch) => {
+  dispatch({
+    type: actionTypes.MESSAGE,
+    payload: "Please wait...",
+  });
   return fetch(baseUrl + "auth/login", {
     method: "post",
     headers: { "Content-Type": "application/json" },
@@ -146,14 +150,22 @@ export const postCreator = (file) => (dispatch) => {
             payload: "Upload failed...",
           });
         }
-        response.json().then((data) => {
-          if (data.success === true) {
+        response
+          .json()
+          .then((data) => {
+            if (data.success === true) {
+              dispatch({
+                type: actionTypes.MESSAGE,
+                payload: "Image upload successful...:)",
+              });
+            }
+          })
+          .catch(function (err) {
             dispatch({
               type: actionTypes.MESSAGE,
-              payload: "Image upload successful...:)",
+              payload: "Some error occured in upload...:(",
             });
-          }
-        });
+          });
       },
       (error) => {
         alert(error);
@@ -476,6 +488,34 @@ export const bioUpdate = (bio) => (dispatch) => {
             dispatch({
               type: actionTypes.MESSAGE,
               payload: "Bio update successful...:)",
+            });
+          }
+        });
+      },
+      (error) => {
+        alert(error);
+      }
+    )
+    .catch((error) => {
+      alert(error);
+    });
+};
+
+export const pending = () => (dispatch) => {
+  return fetch(baseUrl + "pending", {
+    method: "get",
+    headers: {
+      "Content-Type": "application/json",
+      token: localStorage.token,
+    },
+  })
+    .then(
+      (response) => {
+        response.json().then((data) => {
+          if (data.success === true) {
+            dispatch({
+              type: actionTypes.PENDING,
+              payload: data.data,
             });
           }
         });

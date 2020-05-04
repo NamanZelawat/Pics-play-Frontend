@@ -11,6 +11,7 @@ import User from "./user/User";
 import Verify from "./verify/Verify";
 import Reset from "./reset/Reset";
 import Profiler from "./profiler/Profiler";
+import Pending from "./pending/Pending"
 import { Switch, Route, Redirect } from "react-router-dom";
 import { auth, page } from "./../redux/actions/actionCreators";
 import { withRouter } from "react-router-dom";
@@ -36,6 +37,7 @@ class Main extends Component {
           <Route exact path="/search/:user" component={() => <User />} />
           <Route exact path="/post" component={() => <Post />} />
           <Route exact path="/me" component={() => <Me />} />
+          <Route exact path="/pending" component={() => <Pending />} />
           <Route exact path="/me/edit" component={() => <Profiler />} />
           <Route
             exact
