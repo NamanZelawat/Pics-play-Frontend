@@ -16,6 +16,23 @@
 <br>
 <br>
 <h1 align="center">Run locally</h1>
+<p>Run pics-play locally in seconds on Linux (Ubuntu and others) with:</p>
+
+```
+git clone https://github.com/NamanZelawat/Closure.git
+```
+
+```
+cd Closure
+```
+
+```
+npm install
+```
+
+```
+npm run dev
+```
 
 
 
