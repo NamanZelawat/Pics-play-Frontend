@@ -19,19 +19,19 @@
 <p>Run pics-play locally in seconds on Linux (Ubuntu and others) with:</p>
 
 ```
-git clone https://github.com/NamanZelawat/Closure.git
+git clone https://github.com/NamanZelawat/Pics-play-Frontend.git
 ```
 
 ```
-cd Closure
+cd Pics-play-frontend
 ```
 
 ```
-npm install
+yarn
 ```
 
 ```
-npm run dev
+yarn start
 ```
 
 
